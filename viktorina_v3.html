@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>viktorina_v2</title>
+    <script language="JavaScript">
+      var rt1="  У И.А.Крылова есть басня «Слон в случае». Начинается она такой строкой: «Когда – то в случай Слон попал у льва». Как это следует понимать?";
+      var rt2="  Высказать свое мнение по одной из следующих пословиц: «Tastes differ»(О вкусах не спорят); «Don’t put off till tomorrow what you can do today»(Не откладывай на завтра то, что можешь сделать сегодня); «Early to bed early to rise makes a man healthy, wealthy and wise»(Кто рано ложится и рано встает, здоровье, богатство и ум наживет)";
+      var rt3="  Торговая компания закупает у производителя телевизоры по оптовой цене 30000 рублей. В розничную сеть телевизоры поступают с наценкой 30%. Через полгода торговая компания начинает распродажу нереализованных телевизоров и снижает розничную цену на 15%. В период распродажи торговая компания по карте постоянного покупателя предоставляет дополнительную скидку 10% от сниженной цены. Сколько сдачи получит владелец карты постоянного покупателя с 30000 рублей, если купит телевизор?";
+      var rt4="  Вирусное заболевание, протекающее с тяжелым поражением нервной системы и заканчивающееся, как правило, смертельным исходом (источником заражения является инфицированные животные)?";
+      var rt5="  Как древние славяне использовали торговые пути «из варяг в греки» и «из варяг в персы»? Откуда и куда шли эти пути?";
+      var rt6="  Из каких произведений эти афоризмы (кто автор)\r\n1)«Природа не храм, а мастерская»\r\n2)«Умом Россию не понять»\r\n3)«…мужик везде есть, стоит только поискать его!»\r\n4)«Жестокие нравы, сударь, в нашем городе, жестокие»";
+      var rt7=" Найти высоту звезды Сириус, имеющей склонение – (-16º), в верхней кульминации над Хасавюртом, географическая широта -  43º.";      
+      
+      var bt1="Что общего у жюри с юристами?";
+      var bt2="Прослушать аудиосюжет и ответить на последующие вопросы\r\n1. What company does Fiona work for?\r\n2. What does the company do?\r\n3. How many employees work for this company?\r\n4. What are the company's annual sales?\r\n5. How many countires does the company operate in?";
+      var bt3="Вкладчик разместил сумму размером 2400 рублей в банк.\r\n Определите, какую сумму получит вкладчик через 3 года, если процентная ставка составляет 19 % в год.";
+      var bt4="Массовое заболевание людей на территории страны или региона.";
+      var bt5="Какой русский царь, не имея прав на престол, правил страной в конце XVI – нач. XVII в.? Как ему это удалось?";
+      var bt6="Назовите писателей 2-ой половины Х1Х века, авторов следующих произведений:\r\n1)«Упырь», «Князь Серебряный», «Дон Жуан».\r\n2)«Горячее сердце», «Лес», «Таланты и поклонники»\r\n3)«Двойник», «Хозяйка», «Записки из Мертвого дома»";
+      var bt7="Промежуток времени между двумя последовательными одинаковыми фазами Луны, называется…";
+      
+      var gt1="Как вы думаете, каких животных обозначали в древнерусском языке слова  овьнъ и коуръ?";
+      var gt2="Решить ситуационную задачу: «Вы находитесь на конференции. Познакомьтесь с коллегой, спросите откуда он(она), чем занимается его(ее) компания, с какой целью он (она) приехал на конференцию»";
+      var gt3="Зарплата рабочего составляла 30 000 рублей, затем зарплату повысили на 30%, а потом понизили на 30%.\r\n Какую зарплату стал получать рабочий?";
+      var gt4="Способность организма человека и животных специфически реагировать на присутствие в нём какого-то вещества, обычно чужеродного.";
+      var gt5="Какой русский князь, готовясь к сражению, заранее предупреждал своих врагов, ходил легко «аки барс» и перед своей гибелью сказал: «Не посрамим земли русской – ляжем костьми!»?";
+      var gt6="Илья Ильич Обломов, находясь на службе, перепутал города, в которые надо было отправить официальные письма. Какие это города?";
+      var gt7="Оптический телескоп, в котором для собирания света используется система вогнутых зеркал, называется…";
+      
+      var yt1=" В путевых очерках И.А. Гончарова «Фрегат «Паллада» читаем: «Он носился по всем палубам и побуждал ленивых матрос лезть в воду?».Что за странная форма, откуда она взялась.";
+      var yt2="Описать помещение";
+      var yt3="В 200 г воды растворили 50 г соли. Какова концентрация полученного раствора?";
+      var yt4="Медицинский инструмент, несущий жизнь в руках врача, и смерть в руках наркомана?";
+      var yt5="«Полушкой» называлась русская монета, равная половине:\r\n1)копейки\r\n2)рубля\r\n3)гривны\r\n4)деньги";
+      var yt6="Как называется современный город, возникший рядом со станцией Грабиловка, возле которой Анна Каренина бросилась под поезд?";
+      var yt7="Основным источником знаний о небесных телах, процессах и явлениях, происходящих во Вселенной, являются…";
+      
+      function blo1(event) {
+    event = event || window.event;
+    var target = event.target || event.srcElement;
+    var name = target.name;
+    var val1 = target.value;
+    switch (name) {
+      case "red": <!--document.getElementById("vopros").value="1"; Вопросы красной дорожки>
+        switch (val1) {
+          case "1":document.getElementById("vopros").value=rt1; 
+          target.style.visibility='hidden'; break;
+          case "2":document.getElementById("vopros").value=rt2; 
+          target.style.visibility='hidden'; break; 
+          case "3":document.getElementById("vopros").value=rt3; 
+          target.style.visibility='hidden'; break;
+          case "4":document.getElementById("vopros").value=rt4; 
+          target.style.visibility='hidden'; break;
+          case "5":document.getElementById("vopros").value=rt5; 
+          target.style.visibility='hidden'; break;
+          case "6":document.getElementById("vopros").value=rt6; 
+          target.style.visibility='hidden'; break;
+          case "7":document.getElementById("vopros").value=rt7; 
+          target.style.visibility='hidden'; break;        							}             
+        break;
+        
+      case "blue":
+        switch (val1) {
+          case "1":document.getElementById("vopros").value=bt1; 
+          target.style.visibility='hidden'; break;
+          case "2":document.getElementById("vopros").value=bt2; 
+          {target.style.visibility='hidden'; shvid();}break;         
+          case "3":document.getElementById("vopros").value=bt3; 
+          target.style.visibility='hidden'; break;
+          case "4":document.getElementById("vopros").value=bt4; 
+          target.style.visibility='hidden'; break;
+          case "5":document.getElementById("vopros").value=bt5; 
+          target.style.visibility='hidden'; break;
+          case "6":document.getElementById("vopros").value=bt6; 
+          target.style.visibility='hidden'; break;
+          case "7":document.getElementById("vopros").value=bt7; 
+          target.style.visibility='hidden'; break; 
+        }        
+        break;
+        
+      case "green":
+        switch (val1) {
+          case "1":document.getElementById("vopros").value=gt1; 
+          target.style.visibility='hidden'; break;
+          case "2":document.getElementById("vopros").value=gt2; 
+          target.style.visibility='hidden'; break; 
+          case "3":document.getElementById("vopros").value=gt3; 
+          target.style.visibility='hidden'; break;
+          case "4":document.getElementById("vopros").value=gt4; 
+          target.style.visibility='hidden'; break;
+          case "5":document.getElementById("vopros").value=gt5; 
+          target.style.visibility='hidden'; break;
+          case "6":document.getElementById("vopros").value=gt6; 
+          target.style.visibility='hidden'; break;
+          case "7":document.getElementById("vopros").value=gt7; 
+          target.style.visibility='hidden'; break;            
+        							}        
+        break;
+        
+      case "yel":
+        switch (val1) {
+          case "1":document.getElementById("vopros").value=yt1; 
+          target.style.visibility='hidden'; break;
+          case "2":document.getElementById("vopros").value=yt2; 
+          target.style.visibility='hidden'; shim();break; <!--Рисунок вставка>
+          case "3":document.getElementById("vopros").value=yt3; 
+          target.style.visibility='hidden'; break;
+          case "4":document.getElementById("vopros").value=yt4; 
+          target.style.visibility='hidden'; break;
+          case "5":document.getElementById("vopros").value=yt5; 
+          target.style.visibility='hidden'; break;
+          case "6":document.getElementById("vopros").value=yt6; 
+          target.style.visibility='hidden'; break;
+          case "7":document.getElementById("vopros").value=yt7; 
+          target.style.visibility='hidden'; break;            
+        							}        
+        break;
+      case "num":
+                  document.getElementById("vopros").value="";
+        					hvid();
+        break;            
+        
+        
+        break;        
+        
+        
+        
+    }
+        
+        
+        
+        <!-- Переклюение фона по столбцам>
+        switch (val1) {
+          case "1":document.getElementById("br1").style.backgroundImage = "url('Umniki/1.jpg')"; 
+          break;
+          case "2":document.getElementById("br1").style.backgroundImage = "url('Umniki/2.jpg')"; 
+          break; 
+          case "3":document.getElementById("br1").style.backgroundImage = "url('Umniki/3.jpg')"; 
+          break;
+          case "4":document.getElementById("br1").style.backgroundImage = "url('Umniki/4.jpg')"; 
+          break;
+          case "5":document.getElementById("br1").style.backgroundImage = "url('Umniki/5.jpg')"; 
+          break;
+          case "6":document.getElementById("br1").style.backgroundImage = "url('Umniki/6.jpeg')"; 
+          break;
+          case "7":document.getElementById("br1").style.backgroundImage = "url('Umniki/7.jpg')"; 
+          break;        							}             
+       
+  }
+function shvid(){
+<!--document.getElementById("vid1").height="360";>
+document.getElementById("vid1").hidden=false;
+<!--document.getElementById("vid1").withth="100%";>
+document.getElementById("hidv").style.visibility="visible";
+}
+function hvid(){
+<!--document.getElementById("vid1").height="1";>
+document.getElementById("vid1").hidden=true; 
+<!--document.getElementById("vid1").withth="1";>
+document.getElementById("hidv").style.visibility="hidden";
+}   
+      
+function shim(){
+document.getElementById("ris1").height="360";
+document.getElementById("ris1").style.visibility="visible";
+}
+function him(){
+document.getElementById("ris1").height="1";
+document.getElementById("ris1").style.visibility="hidden";
+} 
+
+      
+      
+  </script>
+    <style>
+   .r1 {
+    background: red; /* Синий цвет фона */ 
+    color: white; /* Белые буквы */ 
+    font-size: 20pt; /* Размер шрифта в пунктах */
+     
+     
+ 			  }
+   .g1 {
+    background: green; /* Синий цвет фона */ 
+    color: white; /* Белые буквы */ 
+    font-size: 20pt; /* Размер шрифта в пунктах */
+ 			  }
+    .b1 {
+    background: blue; /* Синий цвет фона */ 
+    color: white; /* Белые буквы */ 
+    font-size: 20pt; /* Размер шрифта в пунктах */
+ 			  }
+    .y1 {
+    background: yellow; /* Синий цвет фона */ 
+    color: black; /* Белые буквы */ 
+    font-size: 20pt; /* Размер шрифта в пунктах */
+ 			  }
+    .t1 {
+    background: white; /* Синий цвет фона */ 
+    color: black; /* Белые буквы */ 
+    font-size: 20pt; /* Размер шрифта в пунктах */
+      font-weight:bold;
+    }
+    .z1 {
+    background: white; /* Синий цвет фона */ 
+    color: black; /* Белые буквы */ 
+    font-size: 20pt; /* Размер шрифта в пунктах */
+    }  
+      
+    .tb1 {
+    /*background: white; /* Синий цвет фона */ 
+    color: black; /* Белые буквы */ 
+    font-weight: bold;  
+    font-size: 20pt; /* Размер шрифта в пунктах */
+    }  
+    .tw1 {
+    /*background: white; /* Синий цвет фона */ 
+    color: white; /* Белые буквы */ 
+    font-weight: bold;  
+    font-size: 20pt; /* Размер шрифта в пунктах */
+    }  
+      
+   .kn1 {
+    background: white; /* Синий цвет фона */ 
+    color: ; /* Белые буквы */ 
+    font-size: 20pt; /* Размер шрифта в пунктах */
+    font-weight:bold; 
+ 			  } 
+   img {
+    border: 10px solid white; /* Цветная рамка */
+     position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  max-width: 99%;
+  max-height: 99%;
+  margin: auto;
+  box-shadow: 0 0 20px #000, 0 0 0 1000px rgba(210,210,210,.4);
+   }  
+      .div1 {
+        text-align: center;
+  			height:800;
+  			
+      }
+    </style>
+  </head>
+  <body style="          height: 32px;">
+    <form>
+      <table style="width: 100%; text-align: left; margin-left: auto; margin-right: auto;"
+        cellspacing="5" border="0">
+        <thead>
+          <tr>
+            <td style="background-color: silver;"><span style="color: #cccccc;"><br>
+              </span> </td>
+            <td style="background-color: red; text-align: center;" class="tw1">40
+              У.Е.</td>
+            <td style="text-align: center; background-color: #3366ff;" class="tw1">30
+              У.Е.</td>
+            <td style="text-align: center; background-color: #33cc00;" class="tb1">20
+              У.Е.</td>
+            <td style="text-align: center; background-color: yellow;" class="tb1">10
+              У.Е.</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr align="center">
+            <td style="background-color: silver;"><span style="color: #cccccc;"><input
+class="kn1" name="num" value="Русский язык" onclick="blo1(event)" type="button"></span></td>
+            <td style="background-color: red;"><input name="red" value="1" role="button"
+class="r1" onclick="blo1(event)" type="button"></td>
+            <td style="background-color: #3366ff;"><input name="blue" class="b1"
+value="1" onclick="blo1(event)" type="button"></td>
+            <td style="background-color: #33cc00;"><input name="green" class="g1"
+value="1" onclick="blo1(event)" type="button"></td>
+            <td style="background-color: yellow;"><input name="yel" class="y1" value="1"
+onclick="blo1(event)" type="button"></td>
+          </tr>
+          <tr align="center">
+            <td style="background-color: silver;"><span style="color: #cccccc;"><input
+class="kn1" name="num" value="Иностранный язык" onclick="blo1(event)" type="button"></span></td>
+            <td style="background-color: red;"><input name="red" value="2" 
+class="r1" onclick="blo1(event)" type="button"></td>
+            <td style="background-color: #3366ff;"><input name="blue" value="2"
+class="b1" onclick="blo1(event)" type="button"></td>
+            <td style="background-color: #33cc00;"><input name="green" value="2"
+class="g1" onclick="blo1(event)" type="button"></td>
+            <td style="background-color: yellow;"><input name="yel" value="2" class="y1"
+onclick="blo1(event)" type="button"></td>
+          </tr>
+          <tr align="center">
+            <td style="height: 19px; width: 245.833px; background-color: silver;"><span
+                style="color: #cccccc;"><input class="kn1" name="num" value="Математика" onclick="blo1(event)"
+type="button"></span></td>
+            <td style="width: 230.05px; background-color: red;"><input name="red"
+value="3" class="r1" onclick="blo1(event)" type="button"></td>
+            <td style="width: 205.033px; background-color: #3366ff;"><input name="blue"
+value="3" class="b1" onclick="blo1(event)" type="button"></td>
+            <td style="width: 198.05px; background-color: #33cc00;"><input name="green"
+value="3" class="g1" onclick="blo1(event)" type="button"></td>
+            <td style="width: 181.033px; background-color: yellow;"><input name="yel"
+value="3" class="y1" onclick="blo1(event)" type="button"></td>
+          </tr>
+          <tr align="center">
+            <td style="background-color: silver;"><span style="color: #cccccc;"><input
+class="kn1" name="num" value="ОБЖ" onclick="blo1(event)" type="button"></span></td>
+            <td style="background-color: red;"><input name="red" value="4" class="r1"
+onclick="blo1(event)" type="button"></td>
+            <td style="background-color: #3366ff;"><input name="blue" value="4"
+class="b1" onclick="blo1(event)" type="button"></td>
+            <td style="background-color: #33cc00;"><input name="green" value="4"
+class="g1" onclick="blo1(event)" type="button"></td>
+            <td style="background-color: yellow;"><input name="yel" value="4" class="y1"
+onclick="blo1(event)" type="button"></td>
+          </tr>
+          <tr align="center">
+            <td style="background-color: silver;"><span style="color: #cccccc;"><input
+class="kn1" name="num" value="История" onclick="blo1(event)" type="button"></span></td>
+            <td style="background-color: red;"><input name="red" value="5" class="r1"
+onclick="blo1(event)" type="button"></td>
+            <td style="background-color: #3366ff;"><input name="blue" value="5"
+class="b1" onclick="blo1(event)" type="button"></td>
+            <td style="background-color: #33cc00;"><input name="green" value="5"
+class="g1" onclick="blo1(event)" type="button"></td>
+            <td style="background-color: yellow; height: 33px;"><input name="yel"
+value="5" class="y1" onclick="blo1(event)" type="button"></td>
+          </tr>
+          <tr>
+            <td style="text-align: center; background-color: silver;"><span style="color: #cccccc;"><input
+class="kn1" name="num" value="Литература" onclick="blo1(event)" type="button"></span></td>
+            <td style="text-align: center; background-color: red;"><input name="red"
+value="6" class="r1" onclick="blo1(event)" type="button"></td>
+            <td style="text-align: center; background-color: #3366ff;"><input name="blue"
+value="6" class="b1" onclick="blo1(event)" type="button"></td>
+            <td style="text-align: center; background-color: #33cc00;"><input name="green"
+value="6" class="g1" onclick="blo1(event)" type="button"></td>
+            <td style="background-color: yellow; text-align: center;"><input name="yel"
+value="6" class="y1" onclick="blo1(event)" type="button"></td>
+          </tr>
+          <tr align="center">
+            <td style="background-color: silver;"><span style="color: #cccccc;"><input
+class="kn1" name="num" value="Астрономия" onclick="blo1(event)" type="button"></span> </td>
+            <td style="background-color: red;"><input name="red" value="7" class="r1"
+onclick="blo1(event)" type="button"></td>
+            <td style="background-color: #3366ff;"><input name="blue" value="7"
+class="b1" onclick="blo1(event)" type="button"></td>
+            <td style="background-color: #33cc00;"><input name="green" value="7"
+class="g1" onclick="blo1(event)" type="button"></td>
+            <td style="background-color: yellow; text-align: center;"><input name="yel"
+value="7" class="y1" onclick="blo1(event)" type="button"></td>
+          </tr>
+        </tbody>
+      </table>
+      <div id="br1" class="div1"><br>
+        <br>
+        <br>
+        <textarea name="vopros" id="vopros" cols="70" rows="10" class="t1" wrap="soft"></textarea>
+        <br>
+        <br>
+<div id="vid1" hidden="true"><audio source="" type="audio/mpeg" src="Umniki/audio01.mp3"
+              preload="Auto" controls="controls"></audio></div>        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div>
+        </div>
+        <img id="ris1" src="Umniki/21.jpg" alt="Здесь была картинка." style="visibility: hidden"
+          onclick="him()" height="1"></div>
+    </form>
+    <button id="hidv" value="Закрыть видео" style="visibility: hidden" onclick="hvid()">Закрыть
+      аудио</button>
+    
+  </body>
+</html>
